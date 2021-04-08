@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./categories.module.css";
 
 const Categories = (props) => {
   const categories = props.categories;
@@ -6,7 +7,7 @@ const Categories = (props) => {
   //   console.log("categories in categ: ", categories);
 
   return (
-    <div>
+    <div className={classes.btnsDiv}>
       {categories.map((category, index) => {
         return (
           <button

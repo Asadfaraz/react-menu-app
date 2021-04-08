@@ -38,8 +38,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Our Menu</h1>
-      <hr />
+      <header>
+        <h1>Our Menu</h1>
+        <hr />
+      </header>
 
       {/* Categories component */}
       <Categories

@@ -1,0 +1,25 @@
+.btnsDiv {
+  text-align: center;
+  padding: 20px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+}
+.btnsDiv button {
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  margin: 0 15px;
+
+  border: none;
+  border-radius: 4px;
+  background: none;
+  font-size: 20px;
+
+  color: rgb(187, 123, 4);
+
+  transition: 500ms;
+}
+
+.btnsDiv button:hover {
+  background-color: rgb(187, 123, 4);
+  color: white;
+}

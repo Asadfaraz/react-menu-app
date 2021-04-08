@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./menuitems.module.css";
 
 const MenuItems = (props) => {
   // destructuring menu items
@@ -6,26 +7,28 @@ const MenuItems = (props) => {
   console.log("menuItems: ", menuItems);
 
   return (
-    <article>
+    <section className={classes.menuItems}>
       {menuItems.map((item) => {
         const { id, title, img, desc, price } = item;
         // console.log("title: ", title);
 
         return (
-          <article key={id} style={{ display: "flex" }}>
+          <article key={id} className={classes.singleItem}>
             <div>
-              <img src={img} alt={title} style={{ width: "300px" }} />
+              <img src={img} alt={title} />
             </div>
 
-            <div>
-              <h3>{title}</h3>
-              <h4>{price}</h4>
+            <div className={classes.itemsDetail}>
+              <header className={classes.headerInfo}>
+                <h3>{title}</h3>
+                <h4>${price}</h4>
+              </header>
               <p>{desc}</p>
             </div>
           </article>
         );
       })}
-    </article>
+    </section>
   );
 };
 
